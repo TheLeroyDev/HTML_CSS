@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <div>
+        <h1>Imagens Dinâmicas</h1>
+        <p>
+            Tente abrir este site em vários dispositivos, ou tente mudar a resolução da janela do navegador.
+        </p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+            <img src="imagens/g.png" alt="Imagem flexível">
+        </picture>
+
+        <h1>Reproduzindo Áudios</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5</p>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="midia/teste.mp3" type="audio/mpeg">
+        </audio>
+
+        <h1>Reproduzindo Vídeos Próprios</h1>
+        <p>Vamos aprender a reproduzir vídeos locais em HTML5</p>
+        <video width="560" controls poster="imagens/vaporwave.jpg">
+            <source src="midia/teste.mp4" type="video/mp4">
+        </video>
+
+        <h1>Reproduzindo Vídeos Terceiros</h1>
+        <p>Vamos aprender a reproduzir vídeos hospedados em sites terceiros em HTML5</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!--Usar o site https://www.pexels.com-->
+</body>
+</html>
